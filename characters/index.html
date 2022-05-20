@@ -1,0 +1,34 @@
+<html><!--NEW-->
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script language="javascript" type="text/javascript" src="story.js"></script>
+  <script language="javascript" type="text/javascript" src="melee.js"></script>
+</head>
+
+<body onload="setupNoDB()">
+
+  <div id = "modalBox" class="modal">
+  <!-- Modal content -->
+    <div id="modal-content">
+      <div id="modalText">No text included.</div>
+    </div>
+    <button onClick="hideModal()">Close</button>
+  </div>
+   <button onclick="round()">Run Round</button>
+  </div>
+  <div id = "border">
+    <div id="storybox">
+    </div>
+    <p id = "currentStory">text</p>
+    <select id = "choices" name="choice">
+      <option value="first">First Value</option> 
+      <option value="second" selected>Second Value</option>
+      <option value="third">Third Value</option>
+    </select>
+    <button id = "button1">Click here</button>
+  </div>
+  <script language="javascript" type="text/javascript" src="../webhelper.js"></script>
+</body>
+</html>
