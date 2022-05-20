@@ -9,17 +9,18 @@
 </style>
 </head>
 
-<body>
-    <div id = "border" class="hide">
+<body onload = "start();">
+   <div id = "border">
+    <div id="storybox">
+    </div>
     <p id = "currentStory">text</p>
     <select id = "choices" name="choice">
-            <option value="first">First Value</option> 
-            <option value="second" selected>Second Value</option>
-            <option value="third">Third Value</option>
-          </select>
-          <button id = "button1">Click here</button>
-        </div>
-
+      <option value="first">First Value</option>
+      <option value="second" selected>Second Value</option>
+      <option value="third">Third Value</option>
+    </select>
+    <button id = "button1">Click here</button>
+  </div>
   <script>
   setTimeout(function(){
     document.getElementById('border').classList.remove('hide');

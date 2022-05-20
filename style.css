@@ -1,50 +1,125 @@
-html {
-
-    background:url("map-of-world.jpg") top left no-repeat;
-    background-size: 100% 100%;
-}
-div{
-    border: 2px solid black;
-    background-color: rgb(47, 70, 45);
-    padding: 10px;
-    border-radius: 25px;
-    width: 60%;
-    margin-right: 20%;
-    margin-left: 20%;
+body {
+  background: black url("https://i.ytimg.com/vi/TUYx0wf8-h0/maxresdefault.jpg") center 25px no-repeat;
 }
 
-p {
-    border-radius: 5px;
-    font-size: 30px;
-    background-color: rgb(212, 239, 223  );
-    padding:2px;
-    margin-top: 29px;
-    margin-bottom: 20px;
-    margin-right: 14px;
-    margin-left: 14px;
-    width: 95%;
-    height: 60%;
-    overflow-y: scroll;
+p, #choices, #button1 {
+  font-family: Garamond;
+  font-size: 25px;
+  background-color: white;
+  padding:15px;
 }
 
-select {
-    width: 95%;
-    font-size: 25px;
-    background-color: rgb(212, 239, 223  );
-    padding-top: 0px;
-    margin-top: 2px;
-    margin-bottom: 9px;
-    margin-right: 19px;
-    margin-left: 19px;
+#border{
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: darkblue;
+  padding: 10px;
+  width: 60%;
+  margin: 100px 20%;
 }
 
-button {
-    width: 95%;
-    height: 90px;
-    font-size: 25px;
-    background-color: rgb(212, 239, 223  );
-    margin-top: 2px;
-    margin-bottom: 9px;
-    margin-right: 19px;
-    margin-left: 19px;
+#currentStory {
+  display:block;
+  border-radius: 5px;
+  padding:15px;
+  margin: 29px 14px 20px 14px;
+  text-align: center;
 }
+
+select, #button1 {
+  width: 95%;
+  font-size: 25px;
+  padding-top: 0px;
+  margin: 2px 19px 9px 19px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#button1 {
+  height: 3em;
+}
+
+#button1:hover, #choices:hover {
+  background-color: #add8e6;
+}
+
+#button1:active, #choices:active {
+  background-color: mistyrose;
+}
+
+#storybox {
+  text-align:center;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border: 2px groove green;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+table, th, td {
+  border: 2px groove pink;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+ }
+th {
+  background-color: black;
+  color: white;
+}
+td {
+  font-size: 24pt;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 600px; /* Full width */
+  height: 400px; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+  background-color: white;
+  border: 1px solid blue;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
+
+/* Modal Content/Box */
+#modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
